@@ -89,9 +89,6 @@ body {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
 .title {
   text-align: center;
   padding-block: 2em;
@@ -353,4 +350,7 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
+}
+.visually-hidden {
+  color: #575757;
 }
