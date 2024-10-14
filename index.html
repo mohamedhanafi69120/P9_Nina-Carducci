@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Ajout de lang="fr" pour indiquer la langue de la page, utile pour l'accessibilité et le SEO -->
 <html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,187 +12,207 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <!-- Ajout d'un titre pour SEO et clarté de la page -->
     <title>Nina Carducci - Photographe professionnelle</title>
     <meta
       name="description"
       content="Bienvenue sur le site de Nina Carducci, votre photographe professionnelle, spécialisée dans la capture de moments émotionnels et exceptionnels. Avec un regard sensible et une grande attention aux détails, Nina immortalise vos instants précieux à travers des photos authentiques et mémorables"
     />
+    <!-- Mots-clés ajoutés pour le SEO -->
     <meta
       name="keywords"
       content="Photograph, proffessionnelle,retouches,edition,studio, artistique,evenmentiel,portrait"
     />
+    <!-- Permet aux moteurs de recherche d'indexer toutes les pages du site -->
     <meta name="robots" content="all" />
+    <!-- defer ajouté pour charger les scripts après le contenu HTML -->
     <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js "
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous" defer
+      crossorigin="anonymous"
+      defer
     ></script>
+    <!-- defer pour optimisation des performances -->
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
-    <!--Referencement Local -->
-     <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "image": [
-    "https://mohamedhanafi69120.github.io/P9_nina-carducci/assets/images/camera.webp"
-  ],
-  "name": "Nina Carducci",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "68 Avenue Alsace-Lorraine",
-    "addressLocality": "Bordeaux",
-    "addressRegion": "Nouvelle-Aquitaine",
-    "postalCode": "33200",
-    "addressCountry": "FR"
-  },
-  "review": {
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": "Nina Carducci"
-    }
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 44.837789, 
-    "longitude": -0.57918 
-  },
-  "url": "https://mohamedhanafi69120.github.io/P9_nina-carducci/",
-  "telephone": "+33556677889",
-  "priceRange": "50-400 €",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "10:00",
-      "closes": "19:00"
-    }
-  ]
-}
-
+    <!-- Ajout du référencement local en JSON-LD pour améliorer la visibilité dans les recherches locales -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "image": [
+          "https://mohamedhanafi69120.github.io/P9_nina-carducci/assets/images/camera.webp"
+        ],
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 Avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Nina Carducci"
+          }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.837789,
+          "longitude": -0.57918
+        },
+        "url": "https://mohamedhanafi69120.github.io/P9_nina-carducci/",
+        "telephone": "+33556677889",
+        "priceRange": "50-400 €",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ]
+      }
     </script>
   </head>
   <body>
+    <!-- Utilisation de <main> pour structurer le contenu principal de la page -->
     <main>
-	<header id="header">
-		<div class="top-header">
-			<h1 class="name">Nina Carducci</h1>
-			<nav class="nav">
-			<ul>
-				<li><a href="#about">À propos</a></li>
-				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Service</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li>
-				<a
-					class="social-link"
-					href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-					target="_blank"
-					><img src="assets/images/instagram.webp" alt="Logo du reseau instagram"
-				/></a>
-				</li>
-			</ul>
-      </nav>
-		</div>
-		<div
-			id="carouselExampleIndicators"
-			class="carousel slide"
-			data-bs-ride="carousel"
-			>
-			<div class="carousel-indicators">
-				<button
-				type="button"
-				data-bs-target="#carouselExampleIndicators"
-				data-bs-slide-to="0"
-				class="active"
-				aria-current="true"
-				aria-label="Slide 1"
-				></button>
-				<button
-				type="button"
-				data-bs-target="#carouselExampleIndicators"
-				data-bs-slide-to="1"
-				aria-label="Slide 2"
-				></button>
-				<button
-				type="button"
-				data-bs-target="#carouselExampleIndicators"
-				data-bs-slide-to="2"
-				aria-label="Slide 3"
-				></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-				<img
-					src="./assets/images/slider/1980/ryoji-iwata-1980.webp"
-          srcset="./assets/images/slider/1180/ryoji-iwata-1180.webp 1180w,
-          ./assets/images/slider/1000/ryoji-iwata-1000.webp 1000w,
-          ./assets/images/slider/650/ryoji-iwata-650.webp 650w,
-          ./assets/images/slider/450/ryoji-iwata-450.webp 450w,
-          ./assets/images/slider/360/ryoji-iwata-360.webp 360w,"
-					class="d-block w-100"
-					alt="Homme en costume noir traversant un passage piéton."
-				/>
-				</div>
-				<div class="carousel-item">
-				<img
-					src="./assets/images/slider/nicholas-green-1980.webp"
-          srcset="./assets/images/slider/1180/nicholas-green-1180.webp 1180w,
-          ./assets/images/slider/1000/nicholas-green-1000.webp 1000w,
-          ./assets/images/slider/650/nicholas-green-650.webp 650w,
-          ./assets/images/slider/450/nicholas-green-450.webp 450w,
-          ./assets/images/slider/360/nicholas-green-360.webp 360w"
-					class="d-block w-100"
-					alt="Foule enthousiaste dans un concert ou un festival."
-				/>
-				</div>
-				<div class="carousel-item">
-				<img
-					src="./assets/images/slider/edward-cisneros-1980.webp"
-          srcset="./assets/images/slider/1180/edward-cisneros-1180.webp 1180w,
-          ./assets/images/slider/1000/edward-cisneros-1000.webp 1000w,
-          ./assets/images/slider/650/edward-cisneros-650.webp 650w,
-          ./assets/images/slider/450/edward-cisneros-450.webp 450w,
-          ./assets/images/slider/360/edward-cisneros-360.webp 360w"
-					class="d-block w-100"
-					alt="Les deux mariés lors de leur sortie de cérémonie de mariage."
-				/>
-				</div>
-			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-			</div>
-	</header>
+      <!-- Balise <header> pour regrouper l'en-tête de la page -->
+      <header id="header">
+        <div class="top-header">
+          <!-- Passage de <h3> à <h1> pour le titre principal de la page -->
+          <h1 class="name">Nina Carducci</h1>
+          <!-- Nouveau <nav> pour le menu principal, améliore la sémantique et l'accessibilité -->
+          <nav class="nav">
+            <ul>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#gallery">Galerie</a></li>
+              <li><a href="#services">Service</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+                  target="_blank"
+                  ><img
+                    src="assets/images/instagram.webp"
+                    alt="Logo du reseau instagram"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/slider/1980/ryoji-iwata-1980.webp"
+                srcset="
+                  ./assets/images/slider/1180/ryoji-iwata-1180.webp 1180w,
+                  ./assets/images/slider/1000/ryoji-iwata-1000.webp 1000w,
+                  ./assets/images/slider/650/ryoji-iwata-650.webp    650w,
+                  ./assets/images/slider/450/ryoji-iwata-450.webp    450w,
+                  ./assets/images/slider/360/ryoji-iwata-360.webp    360w
+                "
+                class="d-block w-100"
+                alt="Homme en costume noir traversant un passage piéton."
+              /><!-- Utilisation de srcset pour chargement d'images adaptées à la résolution d'écran et ajout d'alt pour accessibilité -->
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/nicholas-green-1980.webp"
+                srcset="
+                  ./assets/images/slider/1180/nicholas-green-1180.webp 1180w,
+                  ./assets/images/slider/1000/nicholas-green-1000.webp 1000w,
+                  ./assets/images/slider/650/nicholas-green-650.webp    650w,
+                  ./assets/images/slider/450/nicholas-green-450.webp    450w,
+                  ./assets/images/slider/360/nicholas-green-360.webp    360w
+                "
+                class="d-block w-100"
+                alt="Foule enthousiaste dans un concert ou un festival."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/edward-cisneros-1980.webp"
+                srcset="
+                  ./assets/images/slider/1180/edward-cisneros-1180.webp 1180w,
+                  ./assets/images/slider/1000/edward-cisneros-1000.webp 1000w,
+                  ./assets/images/slider/650/edward-cisneros-650.webp    650w,
+                  ./assets/images/slider/450/edward-cisneros-450.webp    450w,
+                  ./assets/images/slider/360/edward-cisneros-360.webp    360w
+                "
+                class="d-block w-100"
+                alt="Les deux mariés lors de leur sortie de cérémonie de mariage."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+      <!-- <section> pour structurer la section "À propos" -->
       <section id="about">
         <div class="picture left">
-          <img src="./assets/images/nina.webp" alt="photos de nina Carducci"/>
+          <img src="./assets/images/nina.webp" alt="photos de nina Carducci" />
         </div>
+        <!-- <article> pour délimiter le contenu autonome sur Nina -->
         <article id="about-me">
           <h2 class="about-me__title">A propos de moi</h2>
+          <!-- Utilisation de <h2> pour le titre de section principal -->
           <h3 class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
@@ -209,9 +230,9 @@
             de la tendresse et de lumière à chaque fois que vous poserez les
             yeux sur vos photos.
           </p>
-          </article>
-        </section>
-      
+        </article>
+      </section>
+      <!-- <section> pour structurer la section Portfolio -->
       <section id="gallery">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
@@ -220,47 +241,65 @@
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/aaron-paul.webp"
-            alt="Scène de concert en intérieur avec des lumières rouges et des spectateurs levant les bras." loading="lazy"/>
+              alt="Scène de concert en intérieur avec des lumières rouges et des spectateurs levant les bras."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/ali-morshedlou.webp"
-            alt="Homme en costume, bras croisés, posant dans un environnement professionnel ou urbain." loading="lazy"/>
+              alt="Homme en costume, bras croisés, posant dans un environnement professionnel ou urbain."
+              loading="lazy"
+            /><!-- loading="lazy" pour différer le chargement des images et améliorer les performances de la page -->
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/jason-goodman.webp"
-            alt="Groupe de personnes vue de dos,une personne en chemise à carreaux et d'une femme souriante." loading="lazy"/>
+              alt="Groupe de personnes vue de dos,une personne en chemise à carreaux et d'une femme souriante."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/hannah-busing.webp"
-            alt="Mains tendues de plusieurs personnes se rejoignant, symbolisant la connexion ou l'entraide." loading="lazy"/>
+              alt="Mains tendues de plusieurs personnes se rejoignant, symbolisant la connexion ou l'entraide."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/ade-tunji.webp"
-            alt=" Homme barbu avec un collier, les yeux plissés, face à une forte lumière." loading="lazy"/>
+              alt=" Homme barbu avec un collier, les yeux plissés, face à une forte lumière."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
               src="./assets/images/gallery/mariage/jakob-owens.webp"
-            alt="Couple de jeunes mariés marchant ensemble sous les palmiers, souriants et complices." loading="lazy"/>
+              alt="Couple de jeunes mariés marchant ensemble sous les palmiers, souriants et complices."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
               src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"
-            alt="Femme portant des lunettes, en tenue noire, avec une expression sérieuse et un fond extérieur." loading="lazy"/>
+              alt="Femme portant des lunettes, en tenue noire, avec une expression sérieuse et un fond extérieur."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
               src="./assets/images/gallery/concerts/austin-neill.webp"
-            alt="Artiste sur scène, levant la main dans un nuage de fumée avec des lumières de fond." loading="lazy"/>
+              alt="Artiste sur scène, levant la main dans un nuage de fumée avec des lumières de fond."
+              loading="lazy"
+            />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/mateus-campos.webp"
-            alt="Femme souriante travaillant sur un ordinateur portable dans un environnement bien éclairé." loading="lazy"/>
+              alt="Femme souriante travaillant sur un ordinateur portable dans un environnement bien éclairé."
+              loading="lazy"
+            />
           </div>
         </div>
         <div class="quote">
@@ -278,11 +317,13 @@
           </figure>
         </div>
       </section>
+      <!-- Nouveau <section> pour organiser la section Services -->
       <section id="services">
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
             <article class="service__description">
+              <!-- <article> pour structurer chaque description de service -->
               <h3>Shooting photo</h3>
               <p>
                 Pour capturer vos moments les plus précieux et garder un
@@ -291,6 +332,7 @@
               </p>
             </article>
             <article class="service__price">
+              <!-- <article> pour chaque prix de service associé à sa description -->
               <h4>350€/demi journée</h4>
               <span>Matériel, déplacement inclus</span>
             </article>
@@ -322,8 +364,8 @@
               <span>30 pages recto/verso</span>
             </article>
           </div>
-        </section>
-      
+        </div>
+      </section>
       <div class="quote">
         <figure>
           <blockquote>
@@ -336,6 +378,7 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
+      <!-- Nouveau <section> pour structurer la section de contact -->
       <section id="contact">
         <div class="container">
           <div class="form-container">
@@ -345,9 +388,11 @@
               heures
             </p>
             <form action="#" method="post">
-              <label for="nom">Nom</label>
+              <label for="nom">Nom</label
+              ><!-- Ajout de for pour associer chaque label à son champ -->
               <input type="text" name="nom" id="nom" />
-              <label for="email">Email</label>
+              <label for="email">Email</label
+              ><!-- Liaison des labels avec les champs de formulaire -->
               <input type="email" name="email" id="email" />
               <label for="message">Message</label>
               <textarea
@@ -360,7 +405,10 @@
             </form>
           </div>
           <div class="picture right">
-            <img src="./assets/images/camera.webp" alt="image appareil photographique"/>
+            <img
+              src="./assets/images/camera.webp"
+              alt="image appareil photographique"
+            />
           </div>
         </div>
       </section>
