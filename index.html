@@ -145,123 +145,124 @@
 
   <body>
     <!-- Utilisation de <main> pour structurer le contenu principal de la page -->
+    <header id="header">
+      <div class="top-header">
+        <!-- Passage de <h3> à <h1> pour le titre principal de la page respect du règles du titrage -->
+        <h1 class="name">Nina Carducci</h1>
+        <!-- Nouveau <nav> pour le menu principal, améliore la sémantique et l'accessibilité -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+                target="_blank"
+                ><img
+                  src="assets/images/instagram.webp"
+                  alt="Logo du reseau instagram"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/slider/1980/ryoji-iwata-1980.webp"
+              srcset="
+                ./assets/images/slider/1180/ryoji-iwata-1180.webp 1180w,
+                ./assets/images/slider/1000/ryoji-iwata-1000.webp 1000w,
+                ./assets/images/slider/650/ryoji-iwata-650.webp    650w,
+                ./assets/images/slider/450/ryoji-iwata-450.webp    450w,
+                ./assets/images/slider/360/ryoji-iwata-360.webp    360w
+              "
+              class="d-block w-100"
+              alt="Homme en costume noir traversant un passage piéton."
+            /><!-- Utilisation de srcset pour chargement d'images adaptées à la résolution d'écran et ajout d'alt pour accessibilité -->
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slider/nicholas-green-1980.webp"
+              srcset="
+                ./assets/images/slider/1180/nicholas-green-1180.webp 1180w,
+                ./assets/images/slider/1000/nicholas-green-1000.webp 1000w,
+                ./assets/images/slider/650/nicholas-green-650.webp    650w,
+                ./assets/images/slider/450/nicholas-green-450.webp    450w,
+                ./assets/images/slider/360/nicholas-green-360.webp    360w
+              "
+              class="d-block w-100"
+              alt="Foule enthousiaste dans un concert ou un festival."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slider/edward-cisneros-1980.webp"
+              srcset="
+                ./assets/images/slider/1180/edward-cisneros-1180.webp 1180w,
+                ./assets/images/slider/1000/edward-cisneros-1000.webp 1000w,
+                ./assets/images/slider/650/edward-cisneros-650.webp    650w,
+                ./assets/images/slider/450/edward-cisneros-450.webp    450w,
+                ./assets/images/slider/360/edward-cisneros-360.webp    360w
+              "
+              class="d-block w-100"
+              alt="Les deux mariés lors de leur sortie de cérémonie de mariage."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
     <main>
       <!-- Balise <header> pour regrouper l'en-tête de la page -->
-      <header id="header">
-        <div class="top-header">
-          <!-- Passage de <h3> à <h1> pour le titre principal de la page respect du règles du titrage -->
-          <h1 class="name">Nina Carducci</h1>
-          <!-- Nouveau <nav> pour le menu principal, améliore la sémantique et l'accessibilité -->
-          <nav class="nav">
-            <ul>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#gallery">Galerie</a></li>
-              <li><a href="#services">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-                  target="_blank"
-                  ><img
-                    src="assets/images/instagram.webp"
-                    alt="Logo du reseau instagram"
-                /></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./assets/images/slider/1980/ryoji-iwata-1980.webp"
-                srcset="
-                  ./assets/images/slider/1180/ryoji-iwata-1180.webp 1180w,
-                  ./assets/images/slider/1000/ryoji-iwata-1000.webp 1000w,
-                  ./assets/images/slider/650/ryoji-iwata-650.webp    650w,
-                  ./assets/images/slider/450/ryoji-iwata-450.webp    450w,
-                  ./assets/images/slider/360/ryoji-iwata-360.webp    360w
-                "
-                class="d-block w-100"
-                alt="Homme en costume noir traversant un passage piéton."
-              /><!-- Utilisation de srcset pour chargement d'images adaptées à la résolution d'écran et ajout d'alt pour accessibilité -->
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/slider/nicholas-green-1980.webp"
-                srcset="
-                  ./assets/images/slider/1180/nicholas-green-1180.webp 1180w,
-                  ./assets/images/slider/1000/nicholas-green-1000.webp 1000w,
-                  ./assets/images/slider/650/nicholas-green-650.webp    650w,
-                  ./assets/images/slider/450/nicholas-green-450.webp    450w,
-                  ./assets/images/slider/360/nicholas-green-360.webp    360w
-                "
-                class="d-block w-100"
-                alt="Foule enthousiaste dans un concert ou un festival."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./assets/images/slider/edward-cisneros-1980.webp"
-                srcset="
-                  ./assets/images/slider/1180/edward-cisneros-1180.webp 1180w,
-                  ./assets/images/slider/1000/edward-cisneros-1000.webp 1000w,
-                  ./assets/images/slider/650/edward-cisneros-650.webp    650w,
-                  ./assets/images/slider/450/edward-cisneros-450.webp    450w,
-                  ./assets/images/slider/360/edward-cisneros-360.webp    360w
-                "
-                class="d-block w-100"
-                alt="Les deux mariés lors de leur sortie de cérémonie de mariage."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </header>
+
       <!-- <section> pour structurer la section "À propos" -->
       <section id="about">
         <div class="picture left">
@@ -437,39 +438,38 @@
         </figure>
       </div>
       <!-- Nouveau <section> pour structurer la section de contact -->
-      <section id="contact">
-        <div class="container">
-          <div class="form-container">
-            <h2>Une question ? Une demande de devis ?</h2>
-            <p>
-              N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
-              heures
-            </p>
-            <form action="#" method="post">
-              <label for="nom">Nom</label
-              ><!-- Ajout de for pour associer chaque label à son champ -->
-              <input type="text" name="nom" id="nom" />
-              <label for="email">Email</label
-              ><!-- Liaison des labels avec les champs de formulaire -->
-              <input type="email" name="email" id="email" />
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <input type="submit" value="Envoyer" />
-            </form>
-          </div>
-          <div class="picture right">
-            <img
-              src="./assets/images/camera.webp"
-              alt="image appareil photographique"
-            />
-          </div>
-        </div>
-      </section>
     </main>
+    <footer id="contact">
+      <div class="container">
+        <div class="form-container">
+          <h2>Une question ? Une demande de devis ?</h2>
+          <p>
+            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+          </p>
+          <form action="#" method="post">
+            <label for="nom">Nom</label
+            ><!-- Ajout de for pour associer chaque label à son champ -->
+            <input type="text" name="nom" id="nom" />
+            <label for="email">Email</label
+            ><!-- Liaison des labels avec les champs de formulaire -->
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+        <div class="picture right">
+          <img
+            src="./assets/images/camera.webp"
+            alt="image appareil photographique"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
